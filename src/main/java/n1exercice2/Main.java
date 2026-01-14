@@ -7,11 +7,11 @@ public class Main {
 
 
 
-        Treballador worker1 = new Treballador("Dani", "Vila", 0);
-        TreballadorOnline worker2 = new TreballadorOnline("Marc", "Suau", 0);
-        TreballadorPresencial worker3 = new TreballadorPresencial("Laia", "Vilaseca", 0);
+        Worker worker1 = new Worker("Dani", "Vila", 0);
+        WorkerOnline worker2 = new WorkerOnline("Marc", "Suau", 0);
+        WorkerOnPlace worker3 = new WorkerOnPlace("Laia", "Vilaseca", 0);
 
-        worker2.calcularSouOld();
+        worker2.calculateSalaryOld();
         worker3.oldMethod();
 
     }

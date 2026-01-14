@@ -17,7 +17,7 @@ public class Main {
         L’anotació ha de rebre el directori on es col·locarà el fitxer resultant.
          */
 
-        
+
 
     }
 }
