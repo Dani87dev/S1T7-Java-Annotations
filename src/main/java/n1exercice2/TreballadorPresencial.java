@@ -1,4 +1,4 @@
-package n1exercice1;
+package n1exercice2;
 
 public class TreballadorPresencial extends Treballador {
 
@@ -22,6 +22,9 @@ public class TreballadorPresencial extends Treballador {
         sou = this.getPreuHora() * horesTreballades + benzina;
 
         return sou;
+    }
+    @Deprecated public void oldMethod(){
+        System.out.println("This method is deprecated");
     }
 
 

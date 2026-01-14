@@ -1,7 +1,8 @@
-package n1exercice1;
+package n1exercice2;
 
 public class Main {
 
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
 
 
@@ -10,14 +11,8 @@ public class Main {
         TreballadorOnline worker2 = new TreballadorOnline("Marc", "Suau", 0);
         TreballadorPresencial worker3 = new TreballadorPresencial("Laia", "Vilaseca", 0);
 
-        worker1.setPreuHora(25);
-        worker2.setPreuHora(25);
-        worker3.setPreuHora(25);
-
-        System.out.println(worker1.calcularSou(10));
-        System.out.println(worker2.calcularSou(10));
-        System.out.println(worker3.calcularSou(10));
-
+        worker2.calcularSouOld();
+        worker3.oldMethod();
 
     }
 }
