@@ -10,9 +10,9 @@ public class Main {
         WorkerOnline worker2 = new WorkerOnline("Marc", "Suau", 0);
         WorkerOnPlace worker3 = new WorkerOnPlace("Laia", "Vilaseca", 0);
 
-        worker1.setPreuHora(25);
-        worker2.setPreuHora(25);
-        worker3.setPreuHora(25);
+        worker1.setPriceHour(25);
+        worker2.setPriceHour(25);
+        worker3.setPriceHour(25);
 
         System.out.println(worker1.calculateSalary(10));
         System.out.println(worker2.calculateSalary(10));
