@@ -38,7 +38,7 @@ public class Worker {
 
     public double calculateSalary(int workedHours) {
         double salary = 0d;
-        salary = priceHour * workedHours;
+        salary = this.priceHour * workedHours;
 
         return salary;
     }
