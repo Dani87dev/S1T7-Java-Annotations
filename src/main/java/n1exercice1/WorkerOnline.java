@@ -10,10 +10,8 @@ public class WorkerOnline extends Worker {
 
     @Override
     public double calculateSalary(int workedHours) {
-        double salary = 0d;
-        salary = this.getPriceHour() * workedHours + ONLINE_WORKER;
 
-        return salary;
+        return this.getPriceHour() * workedHours + ONLINE_WORKER;
     }
 
 }

@@ -2,45 +2,26 @@ package n1exercice2;
 
 public class Worker {
 
-    private String name = "";
-    private String surname = "";
-    private int priceHour = 0;
+    private final String NAME;
+    private final String SURNAME;
+    private final int PRICE_HOUR;
 
     public Worker(String name, String surname, int priceHour) {
-        this.name = name;
-        this.surname = surname;
-        this.priceHour = priceHour;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
+        this.NAME = name;
+        this.SURNAME = surname;
+        this.PRICE_HOUR = priceHour;
     }
 
     public int getPriceHour() {
-        return priceHour;
-    }
-
-    public void setNom(String name) {
-        this.name = name;
-    }
-
-    public void setCognom(String surname) {
-        this.surname = surname;
-    }
-
-    public void setPreuHora(int priceHour) {
-        this.priceHour = priceHour;
+        return PRICE_HOUR;
     }
 
     public double calculateSalary(int workedHours) {
-        double salary = 0d;
-        salary = this.priceHour * workedHours;
 
-        return salary;
+        if (workedHours < 0) {
+            throw new IllegalArgumentException("Hours cannot be negative");
+        }
+        return this.PRICE_HOUR * workedHours;
     }
 
 }

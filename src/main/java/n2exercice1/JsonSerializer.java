@@ -8,5 +8,5 @@ public class JsonSerializer {
         this.bankAccount = bankAccount;
     }
 
-    
+
 }
