@@ -11,6 +11,6 @@ public class Main {
 
         worker2.calculateSalaryOld();
         worker3.oldMethod();
-        
+
     }
 }

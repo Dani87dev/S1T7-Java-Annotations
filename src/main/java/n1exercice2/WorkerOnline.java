@@ -14,7 +14,8 @@ public class WorkerOnline extends Worker {
         return this.getPriceHour() * workedHours + ONLINE_WORKER;
     }
 
-    @Deprecated public void calculateSalaryOld() {
+    @Deprecated
+    public void calculateSalaryOld() {
         System.out.println("This method is deprecated");
     }
 
